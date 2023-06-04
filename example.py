@@ -32,7 +32,7 @@ search efficiently. For example usage of this class, see
 :ref:`sphx_glr_auto_examples_sklearn-gridsearchcv-replacement.py`
 example notebook.
 """
-print(__doc__)
+#print(__doc__)
 import numpy as np
 
 #############################################################################
@@ -91,7 +91,7 @@ def objective(**params):
 from skopt import gp_minimize
 res_gp = gp_minimize(objective, space, n_calls=50, random_state=0)
 
-"Best score=%.4f" % res_gp.fun
+print("Best score=%.4f" % res_gp.fun)
 
 #############################################################################
 
