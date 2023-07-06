@@ -91,7 +91,9 @@ def objective(**params):
 from skopt import gp_minimize
 res_gp = gp_minimize(objective, space, n_calls=50, random_state=0)
 
-print("Best score=%.4f" % res_gp.fun)
+#print("Best score=%.4f" % res_gp.fun)
+
+print(f"\n\n\nScore: {res_gp.fun}\n\n\n")
 
 # #############################################################################
 
