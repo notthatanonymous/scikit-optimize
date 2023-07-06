@@ -79,7 +79,7 @@ space  = [Integer(1, 5, name='max_depth'),
 def objective(**params):
     reg.set_params(**params)
 
-    return -np.mean(cross_val_score(reg, X, y, cv=5, n_jobs=-1,
+    return -np.mean(cross_val_score(reg, X, y, cv=5, n_jobs=None,
                                     scoring="neg_mean_absolute_error"))
 
 #############################################################################
